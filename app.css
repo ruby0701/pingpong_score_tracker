@@ -29,3 +29,11 @@ img {
 #header {
     border: 0.5rem gray;
 }
+
+.winner {
+    color: green;
+}
+
+.loser {
+    color: red;
+}

@@ -27,6 +27,8 @@ player1.addEventListener("click", () => {
         }
     }
     if (score1 === winningScore) {
+        player1score.classList.add("winner");
+        player2score.classList.add("loser");
         isGameOver = true;
     }
 });
@@ -42,17 +44,13 @@ player2.addEventListener("click", () => {
         }
     }
     if (score2 === winningScore) {
+        player1score.classList.add("loser");
+        player2score.classList.add("winner");
         isGameOver = true;
     }
 });
 
-reset.addEventListener("click", () => {
-    player1score.innerText = "0";
-    player2score.innerText = "0";
-    score1 = 0;
-    score2 = 0;
-    isGameOver = false;
-});
+reset.addEventListener("click", resets);
 
 scoreTop.addEventListener("change", () => {
     //get top score and store in winnigScore
@@ -60,11 +58,15 @@ scoreTop.addEventListener("change", () => {
 
     //needs to reset the scores so the game restart
     //you don't change the top score mid-game
+    resets();
+});
+
+function resets() {
     player1score.innerText = "0";
     player2score.innerText = "0";
+    player1score.classList.remove("winner", "loser");
+    player2score.classList.remove("winner", "loser");
     score1 = 0;
     score2 = 0;
     isGameOver = false;
-
-
-});
+}
