@@ -13,6 +13,15 @@
         rel="stylesheet">
 </head>
 
+<style>
+    .winner {
+        color: green;
+    }
+
+    .loser {
+        color: red;
+    }
+</style>
 
 <body>
     <div class="container">
@@ -30,40 +39,46 @@
                                 <img
                                     src="https://images.unsplash.com/photo-1611251135345-18c56206b863?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
                                 <p>Ping Pong Score Keeper</p>
-                            </div>
-                        </div>
-                        <footer class="card-footer">
-                            <div id="display">
-                                <h1 class="title is-1"><span id="player1score">0</span> to <span
-                                        id="player2score">0</span></h1>
+                                <div>
+                                    <h1 class="title is-1"><span id="player1score">0</span> to <span
+                                            id="player2score">0</span>
+                                    </h1>
 
-                                <p class="subtitle">Use the button below to keep score.</p>
+                                    <p class="subtitle">Use the button below to keep score.</p>
+
+
+                                    <h3>Playing to</h3>
+                                    <select id="scoreTop">
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                    </select>
+
+                                </div>
                             </div>
-                            <div id="selection">
-                                <h3>Playing to</h3>
-                                <select id="scoreTop">
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
-                                    <option value="8">8</option>
-                                    <option value="9">9</option>
-                                </select>
-                            </div>
-                            <div id="action">
-                                <button id="player1plus">+1 Player One</button>
-                                <button id="player2plus">+1 Player Two</button>
-                                <button id="reset">Reset</button>
-                            </div>
-                        </footer>
+
+                        </div>
+
+
                     </div>
+                    <footer class="card-footer">
+
+
+
+                        <button id="player1plus" class="is-primary button card-footer-item">+1 Player One</button>
+                        <button id="player2plus" class="is-info button card-footer-item">+1 Player Two</button>
+                        <button id="reset" class="is-danger button card-footer-item">Reset</button>
+
+                    </footer>
                 </div>
             </div>
         </div>
-    </div>
 
 
 
-    <script src="app.js"></script>
+        <script src="app.js"></script>
 </body>
 
 </html>
