@@ -61,13 +61,11 @@ scoreTop.addEventListener("change", () => {
 });
 
 function resets() {
-    p1.display.innerText = "0";
-    p2.display.innerText = "0";
-    p1.display.classList.remove("winner", "loser");
-    p2.display.classList.remove("winner", "loser");
-    p1.score = 0;
-    p2.score = 0;
-    isGameOver = false;
-    p1.button.disabled = false;
-    p2.button.disabled = false;
+    isGameOver = flase;
+    for (let p of [p1, p2]) {
+        p.score = 0;
+        p.display.innerText = "0";
+        p.display.classList.remove("winner", "loser");
+        p.score = 0;
+    }
 }
