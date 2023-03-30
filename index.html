@@ -11,7 +11,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="app.css">
 </head>
 
 
@@ -20,40 +19,49 @@
         <div class="column">
             <div class="column is-half is-offset-one-quater">
                 <div class="card">
-                    <div class="card-header">
+                    <header class="card-header">
                         <p class="card-header-title">
                             Ping Pong Score Keeper
                         </p>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            <div id="header">
+                                <img
+                                    src="https://images.unsplash.com/photo-1611251135345-18c56206b863?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
+                                <p>Ping Pong Score Keeper</p>
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <div id="display">
+                                <h1 class="title is-1"><span id="player1score">0</span> to <span
+                                        id="player2score">0</span></h1>
+
+                                <p class="subtitle">Use the button below to keep score.</p>
+                            </div>
+                            <div id="selection">
+                                <h3>Playing to</h3>
+                                <select id="scoreTop">
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                </select>
+                            </div>
+                            <div id="action">
+                                <button id="player1plus">+1 Player One</button>
+                                <button id="player2plus">+1 Player Two</button>
+                                <button id="reset">Reset</button>
+                            </div>
+                        </footer>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div id="header">
-        <img
-            src="https://images.unsplash.com/photo-1611251135345-18c56206b863?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
-        <p>Ping Pong Score Keeper</p>
-    </div>
-    <div id="display">
-        <h1><span id="player1score">0</span> to <span id="player2score">0</span></h1>
 
-        <p>Use the button below to keep score.</p>
-    </div>
-    <div id="selection">
-        <h3>Playing to</h3>
-        <select id="scoreTop">
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-        </select>
-    </div>
-    <div id="action">
-        <button id="player1plus">+1 Player One</button>
-        <button id="player2plus">+1 Player Two</button>
-        <button id="reset">Reset</button>
-    </div>
+
 
     <script src="app.js"></script>
 </body>
