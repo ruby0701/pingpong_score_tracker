@@ -6,10 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PingpongScoreTracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
 </head>
 
-<body>
 
+<body>
+    <div id="header">
+        <img
+            src="https://images.unsplash.com/photo-1611251135345-18c56206b863?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
+        <p>Ping Pong Score Keeper</p>
+    </div>
+    <div id="display">
+        <h1><span id="player1score">0</span> to <span id="player2score">0</span></h1>
+
+        <p>Use the button below to keep score.</p>
+    </div>
+    <div id="selection">
+        <h3>Playing to</h3>
+        <select>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </div>
+    <div id="action">
+        <button id="player1plus">+1 Player One</button>
+        <button id="player2plus">+1 Player Two</button>
+        <button id="reset">Reset</button>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 
 </html>

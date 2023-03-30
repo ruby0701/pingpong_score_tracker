@@ -1,0 +1,31 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    display: inline;
+    align-content: center;
+}
+
+img {
+    width: 400px;
+    height: 300px;
+}
+
+#selection,
+#action {
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+}
+
+#selection select {
+    height: fit-content;
+}
+
+#display {
+    display: flex;
+
+    margin: 1.5rem;
+
+}
+
+#header {
+    border: 0.5rem gray;
+}
