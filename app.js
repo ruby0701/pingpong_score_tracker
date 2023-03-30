@@ -30,6 +30,8 @@ player1.addEventListener("click", () => {
         player1score.classList.add("winner");
         player2score.classList.add("loser");
         isGameOver = true;
+        player1.disabled = true;
+        player2.disabled = true;
     }
 });
 
@@ -47,6 +49,8 @@ player2.addEventListener("click", () => {
         player1score.classList.add("loser");
         player2score.classList.add("winner");
         isGameOver = true;
+        player1.disabled = true;
+        player2.disabled = true;
     }
 });
 
@@ -69,4 +73,6 @@ function resets() {
     score1 = 0;
     score2 = 0;
     isGameOver = false;
+    player1.disabled = false;
+    player2.disabled = false;
 }
